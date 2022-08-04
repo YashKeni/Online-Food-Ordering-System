@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                   <a href="index.html"><img src="images/logo.png" width="200px"></a>
+                </div>
+                <nav>
+                    <ul class="MenuItems">
+                        <li><a href="Index.html" class="link">Home</a></li>
+                        <li><a href="Product.html" class="link">Product</a></li>
+                        <li><a href="Account.html" class="link">Account</a></li>
+                        <li><a href="Cart.html" class="link">Cart</a></li>
+                    </ul>
+                </nav>
+               <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+      <div class="row">
+          <div class="col-2">
+               <h2>Hungry!!! No Worries<br>Order some of the delicious food available here<br>and grab your order today</h2><br>
+               <a href="product.html" class="btn">Order Now &#8594;</a> 
+            </div>
+         </div>
+       </div> 
+      </div> 
+    
+      <!--------- featured categories --------->
+          <div class="categories">
+              <div class="small-container">
+              <div class="row">
+                  <div class="col-3">
+                      <img src="http://www.readersdigest.ca/wp-content/uploads/2015/11/gourmet-burger.jpg">
+                  </div>
+                  <div class="col-3">
+                      <img src="https://www.thespruceeats.com/thmb/kGHnw_CntclNOKdYlVGY43LXl50=/1500x1998/filters:fill(auto,1)/GettyImages-137365008-59546a653df78cdc29be9ef2.jpg">
+                  </div>
+                  <div class="col-3">
+                      <img src="https://www.benvenutolimos.com/blog/wp-content/uploads/2017/12/32132764_xl.jpg">
+                  </div>
+              </div> 
+              </div>
+          </div>
+    
+<!------- footer --------->
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                  <img src="images/play-store.png">
+                  <img src="images/app-store.png">
+              </div>
+          </div>
+          <div class="footer-col-2">
+              <img src="images/logo.png">
+          </div>
+          <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+              </ul>>
+          </div>
+          <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+              </ul>>
+          </div>
+      </div>
+      <hr>
+  </div>
+</div>
+
+<!-------- js for toggle menu --------->
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+      {
+          MenuItems.style.maxHeight = "200px"
+      }
+      else
+      {
+          MenuItems.style.maxHeight = "0px";
+      }
+  }
+</script>
+
+</body>
+</html>

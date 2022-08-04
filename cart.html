@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Cart</title>
+
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    <script src="store.js" async></script>
+    <meta name="robots" content="noindex,follow" />
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><a href="index.html"><img src="images/logo.png" width="130px"></a></a>
+            </div>
+            <nav>
+                <ul class="MenuItems">
+                    <li><a href="Index.html" class="link">Home</a></li>
+                    <li><a href="Product.html" class="link">Product</a></li>
+                    <li><a href="Account.html" class="link">Account</a></li>
+                    <li><a href="Cart.html" class="link">Cart</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+    </div>
+<hr>
+</header>
+<section class="container content-section">
+    <h2 class="section-header">PRODUCTS</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Chicken Meatball and Onion Semizza[Half Pizza]</span>
+            <img class="shop-item-image" src="https://product-assets.faasos.io/production/product/image_1567601978529_meatball%20n%20onion%20half%20pizza%20%281%29.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">219/-</span>
+                <button class="btn btn-primary shop-item-button" type="button">BUY</button>
+               
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Corn Pizza</span>
+            <img class="shop-item-image" src="https://cdn.cdnparenting.com/articles/2018/11/23154525/New-Project-83.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">150/-</span>
+                <button class="btn btn-primary shop-item-button"type="button">BUY</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Egg South Indian Gravy(3egg)</span>
+            <img class="shop-item-image" src="https://www.currytrail.in/wp-content/uploads/2019/01/Egg-Cury-FB-Cover.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">250/-</span>
+                <button class="btn btn-primary shop-item-button" type="button">BUY</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Idli(4 pcs)</span>
+            <img class="shop-item-image" src="https://www.jeyashriskitchen.com/wp-content/uploads/2012/09/IMG_4830.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">55/-</span>
+                <button class="btn btn-primary shop-item-button" type="button">BUY</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$674</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
+
+
+
+
+<!------- footer --------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+<!-------- js for toggle menu --------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+</html>
